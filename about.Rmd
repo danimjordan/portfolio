@@ -1,52 +1,59 @@
-
 ---
 title: "About Me"
 ---
 
 ## Background
 
-I'm a second-year student at VIU, developing skills 
-in data analysis, business intelligence, and statistical computing.
+Danielle Levesque — Business Data Analyst & Digital Strategy Consultant
+
+I am a results-driven Business Data Analyst specializing in data-driven decision-making, digital strategy, and performance optimization. I have helped organizations turn raw data into actionable insights that drive growth, strengthen customer engagement, and improve operational efficiency. With a strong foundation in analytics, visualization, and e-commerce performance, I bridges the gap between technical analysis and executive-level strategy, ensuring that every insight directly supports business goals.
 
 ## Skills & Tools
 
-**Analysis:**
+Skilled in R, SQL, Tableau, and modern analytics workflows, she builds insightful dashboards, conducts segmentation analysis, and translates complex data-sets into clear recommendations. My work has supported marketing, retail, and digital operations teams in making smarter, faster decisions.
 
-- R for data analysis
-- Data cleaning and transformation
-- Statistical analysis and interpretation
+## Professional Experience Business Data Analyst
 
-**Visualization & Reporting:**
+**Insight Loop Analytics Inc. \| Nanaimo, BC \| 2022–Present**
 
-- ggplot2 for professional visualizations
-- R Markdown for reproducible reports
-- Data storytelling for business audiences
+Analyze e-commerce and retail performance data to identify revenue drivers, customer trends, and operational bottlenecks.
+Create dashboards and KPI scorecards for marketing and finance teams using Tableau and R Markdown.
+Conduct forecasting and segmentation analyses that resulted in a 12% improvement in targeted campaign ROI.
+Lead A/B testing initiatives to optimize landing pages and improve conversion rates by 8%.
+Translate complex statistical findings into clear strategic recommendations for senior leadership.
+Digital Strategy Consultant
 
-**Data Sources:**
+**NorthWave Solutions \| Remote \| 2020–2022**
 
-- CSV file processing
-- Government open data (via APIs)
-- Business performance datasets
+Guided small and mid-sized businesses in digital transformation, analytics adoption, and online customer experience improvements.
+Developed end-to-end data collection frameworks for website, CRM, and sales systems.
+Designed and delivered digital performance reports to inform client marketing and product strategies.
+Improved clients’ online revenue by 10–25% through insights-driven optimization.
+Marketing & Data Coordinator
+
+**Brightline Retail Group \| Toronto, ON \| 2018–2020**
+
+Managed retail sales data-sets, performed monthly performance reporting, and supported inventory planning.
+Built interactive Excel and R dashboards to track regional sales and demand patterns.
+Collaborated with marketing teams to analyze customer behavior and campaign effectiveness.
 
 ## Education
 
-**VIU** - E-Management Program  
-*Expected Graduation: [Year]*
+**VIU** - Bachelor of Business Administration *Expected Graduation: 2027*
 
 Relevant Coursework:
 
-- Data Analysis for E-Management
-- Business Statistics
-- Information Systems
+-   Data Analysis for E-Management
+-   Business Statistics
+-   Information Systems
+-   Accounting
+-   Business Management
 
 ## Contact
 
-Feel free to connect with me:
+-   Email: [danimlevesque@gmail.com
+-   GitHub: danimjordan
 
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- GitHub: [yourusername](https://github.com/yourusername)
-
----
+------------------------------------------------------------------------
 
 [← Back to Home](index.html)

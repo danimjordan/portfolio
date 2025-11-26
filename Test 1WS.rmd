@@ -1,0 +1,128 @@
+---
+title: "Introduction to E-Business Analytics"
+subtitle: "Performance Metrics Report"
+author: "Danielle Levesque ID 547380733"
+date: "September 19, 2025"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    number_sections: true
+---
+
+## Executive Summary {.unnumbered}
+
+This report is used to analyze daily website performance using a small data-set. The report was based on 3 areas, Engagement, Performance and Server Load. After analysis of 153 days the report shows a strong correlation of 0.70 between user engagement and performance. The engagement ranges from 56 to 97 and the median engagement is 79. This performance reaches a max of 168 but has 37 missing values. Managers should concentrate on boosting engagement to enhance performance. {.unnumbered}
+
+Question 1: Getting to Know Your Data
+
+```{r setup, include=TRUE}
+# Create website performance dataset
+webperfo <- data.frame(
+  engagement = airquality$Temp,
+  performance = airquality$Ozone,
+  server_load = airquality$Wind
+)
+```
+
+Q1 a)
+
+```{r}
+head(webperfo)
+```
+
+There are 3 columns Engagement, Performance and Server_Load. Only using a few rows helps to understand structure and date types. Too much data can be confusing
+
+Q1 b)
+
+```{r}
+summary(webperfo)
+```
+
+Performance is the variable that has missing values. The engagement scores range from 56 to 97
+
+Q1 c)
+
+```{r}
+nrow(webperfo)
+```
+
+153 days. Managers need to know sample size in order to have a more reliable picture of the data. The more days the more reliable the data used in making decision
+
+Q1 d)
+
+```{r}
+max(webperfo$engagement)
+```
+
+The highest daily engagement score is 97. This number is higher then the median score of 79. This shows potential for high engagement during specific events.
+
+Q1 e)
+
+```{r}
+max(webperfo$performance, na.rm = TRUE)
+```
+
+The best website performance score is 168. We needed to add na.rm = TRUE so we won't have any missing values
+
+Question 2: Understanding Relationships
+
+Q2 a)
+
+```{r}
+plot(webperfo$engagement, webperfo$performance)
+```
+
+It looks like a positive trend but it is hard to tell without labels or titles
+
+Q2 b)
+
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score")
+```
+
+Labels and title clarify what the date represents
+
+Q2 c)
+
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score",
+     pch = 16, col = "blue")
+```
+
+The is an upward trend. Increased engagement drives better performance, suggesting user interaction enhances site efficiency.
+
+Q2 d)
+
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score",
+     pch = 16, col = "blue")
+abline(lm(performance ~ engagement, data = webperfo), 
+       col = "red", lwd = 2)
+```
+
+The Red line shows the average or trend. This red line shows an upward increase in engagement.
+
+Question 3: Business Interpretation
+
+Q3 a)
+
+```{r}
+cor(webperfo$engagement, webperfo$performance, use = "complete.obs")
+```
+
+The correlation coefficient is 0.7 which is considered to be a strong relationship
+
+Q3 b)
+
+Usually when engagement is high the website performance improves. Managers should look at other ways to increase user interaction and to ensure site efficiency. Resources may need to be allocated to strategies for increasing engagement and for better overall website stability.
